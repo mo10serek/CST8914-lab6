@@ -18,10 +18,16 @@
 
 	<style>
 
- .social  a svg {
+ 	.social a svg {
       width: 30px;
       fill: #91929a;
     }
+
+	th, td {
+  		padding: 15px;
+		border: 1px solid black;
+		border-collapse: collapse;
+	}
 	</style>
 </head>
 
@@ -75,10 +81,10 @@
 			<section class="col-md-4 pull-right">
 				<h2>Related resources </h2>
 				<p>It's time to sell and find the next "one". Let us help you navigate the ins & outs of your next move. </p>
-				<ul>
-					<li><a href="https://www.google.ca">Looking for an upgrade?</a></li>
-					<li><a href="https://www.google.ca">Buying tips</a></li>
-					<li><a href="https://www.google.ca">How much is your current home worth?</a></li>
+				<ul id="list of links of related resources" role="pointslist">
+					<li role="resource"><a href="https://www.google.ca">Looking for an upgrade?</a></li>
+					<li role="resource"><a href="https://www.google.ca">Buying tips</a></li>
+					<li role="resource"><a href="https://www.google.ca">How much is your current home worth?</a></li>
 				</ul>
 			</section>
 			<section class="col-md-8">
@@ -86,34 +92,34 @@
 				<p>Hi/Max agents go above and beyond and always strive to be the best they can be. 
 					HI/MAX is extremely community focused, and our agents are too!</p>
 				<h2>Stats of HI/Max</h2>
-				<table>
+				<table id="data collected from 2021 to 2022">
 					<col>
 					<colgroup span="2"></colgroup>
  					<colgroup span="2"></colgroup>
 					<tr>
-						<td rowspan="2" style="text-align:center"></td>
-						<th colspan="2" style="text-align:center" scope="colgroup">Sold Properties</th>
-						<th colspan="2" style="text-align:center" scope="colgroup">Average selling price</th>
+						<th rowspan="2" id="Y">Year</th>
+						<th colspan="2" id="Solid_Pro" scope="colgroup">Sold Properties</th>
+						<th colspan="2" id="Average_pri" scope="colgroup">Average selling price</th>
 					</tr>
 					<tr>
-						<th id="Quebec" style="text-align:center" scope="col">Quebec</th>
-						<th id="Ontario" style="text-align:center" scope="col">Ontario</th>
-						<th id="Single_house" style="text-align:center" scope="col">Single house</th>
-						<th id="Condo" style="text-align:center" scope="col">Condo</th>
+						<th id="Qu" scope="col">Quebec</th>
+						<th id="On" scope="col">Ontario</th>
+						<th id="Single_h" scope="col">Single house</th>
+						<th id="C" scope="col">Condo</th>
 					</tr>
 					<tr>
-						<th id="2021" scope="row">2021</th>
-						<td id="Quebec">50</td>
-						<td id="Ontario">100</td>
-						<td id="Single house">$500,00</td>
-						<td id="Condo">189,000</td>
+						<th headers="Y" scope="row">2021</th>
+						<td id="Solid_Pro Qu">50</td>
+						<td id="Solid_Pro On">100</td>
+						<td id="Average_pri Single_h">$500,00</td>
+						<td id="Average_pri C">189,000</td>
 					</tr>
 					<tr>
-						<th scope="row">2022</th>
-						<td>100</td>
-						<td>200</td>
-						<td>780,000</td>
-						<td>240,000</td>
+						<th headers="Y" scope="row">2022</th>
+						<td id="Solid_Pro Qu">100</td>
+						<td id="Solid_Pro On">200</td>
+						<td id="Average_pri Single_h">780,000</td>
+						<td id="Average_pri C">240,000</td>
 					</tr>
 				</table>
 			</section>
